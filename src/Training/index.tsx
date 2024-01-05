@@ -6,28 +6,15 @@ export default function Training() {
             <div id='training-only'>
                 <h2>FORMAÇÃO</h2>
                 <div id='training'>
-                    <img style={{ width: '240px' }} src="/images/eniac_logo.jpg"></img>
-                    <div>
-                        <p>Steve Jobs — Fundador da Apple</p>
-                        <p>Pineapple. Mango. Gooseberries. Blackberries. Tomatoes. Heirloom tomatoes. Beets. Chives. Corn. Endive.</p>
+                    <img src="/images/eniac_logo.jpg"></img>
+                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                        <p>AGO 2020 - CURSANDO</p>
+                        <p>Bacharelado em Engenharia da Computação. </p>
+                        <p>Devido ao curso ter semestres independentes um do outro, acabei tendo que fazer meu TCC antes do fim do curso. Clique abaixo para baixá-lo.</p>
                         <button>Baixar TCC</button>
                     </div>
                 </div>
             </div>
-            <div id='languages-only'>
-                <h2>IDIOMAS</h2>
-                <div id='flags'>
-                    <div>
-                        <img className='flag' src="/images/bandeira_brasil.webp"></img>
-                        <p>Português nativo</p>
-                    </div>
-                    <div>
-                        <img className='flag' src="/images/bandeira_england.png"></img>
-                        <p>Inglês - B1: Pré-intermediário</p>
-                    </div>
-                </div>
-            </div>
-
         </TrainingStyled>
     )
 }

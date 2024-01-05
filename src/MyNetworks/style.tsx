@@ -6,9 +6,8 @@ export const NetworksStyled = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20vh;
+    gap: 5rem;
     align-items: center;
-    background-color: var(--gray);
 
     div {
         display: flex;
@@ -18,16 +17,37 @@ export const NetworksStyled = styled.div`
     }
 
     .network {
-        width: 100px;
+        width: 5rem;
         padding: 2rem;
-        background-color: var(--white);
-        border-radius: 3rem;
+        background-color: #ffffff1a;
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0.06) 40%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.06) 60%);
+        border-radius: 1rem;
         border: none;
+        box-shadow: 0px 0px 3px white;
 
     }
 
     .network:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
+    }
+
+    @media only screen and (max-width: 800px) {
+        div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .network {
+        width: 10%;
+
+    }
+
     }
 
 `

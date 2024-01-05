@@ -5,9 +5,14 @@
 
 body {
   margin: 0;
+  padding: 0;
+  color: #e0e0e0;
+  overflow-x: hidden;
+  text-align: justify;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'Orienta', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(25, 25, 25);
 }
 
 code {

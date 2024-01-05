@@ -1,13 +1,12 @@
 import { styled } from "styled-components";
 
-
-
 export const HeaderStyled = styled.div `
 
-    justify-content: space-between;
+    display: flex;
     align-items: center;
     padding: 1.5rem 8rem;
-    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
 
 `
 
@@ -21,26 +20,26 @@ export const OptionsStyled = styled.div `
 
     a {
         text-decoration: none;
-        color: black;
+        color: #e0e0e0;
     }
 
     a:hover {
-        font-weight: 500;
+        text-decoration: underline;
     }
 
 `
 
 export const ButtonStyled = styled.button`
 
-    background-color: var(--main-green);
+    background-color: var(--light-main-red);
     padding: 0.5rem 1rem;
-    color: var(--white);
     border-radius: 8px;
     font-size: 1rem;
     border: none;
+    color: #e0e0e0;
 
     &:hover {
-        background-color: var(--light-main-green);
+        background-color: var(--main-red);
     }
 
 `
