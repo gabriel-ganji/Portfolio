@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const HeaderStyled = styled.div `
+export const HeaderStyled = styled.div`
 
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@ export const HeaderStyled = styled.div `
 
 `
 
-export const OptionsStyled = styled.div `
+export const OptionsStyled = styled.div`
 
     justify-content: center;
     align-items: center;
@@ -27,18 +27,17 @@ export const OptionsStyled = styled.div `
         text-decoration: underline;
     }
 
-`
+    .curriculo {
+        background-color: var(--light-main-red);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        border: none;
+        color: #e0e0e0;
+    }
 
-export const ButtonStyled = styled.button`
-
-    background-color: var(--light-main-red);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    border: none;
-    color: #e0e0e0;
-
-    &:hover {
+    .curriculo:hover {
+        text-decoration: none;
         background-color: var(--main-red);
     }
 

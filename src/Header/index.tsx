@@ -1,6 +1,5 @@
 import { HeaderStyled } from "./style";
 import { OptionsStyled } from "./style";
-import { ButtonStyled } from "./style";
 import { NameStyled } from "./style";
 import "./styles.css";
 
@@ -41,7 +40,7 @@ export default function Header() {
                     <a href="/#habilidades">Habilidades</a>
                     <a href="https://github.com/gabriel-ganji" target="_blank">Projetos</a>
                     <a href="/#minhas-redes">Minhas redes</a>
-                    <ButtonStyled>Currículo</ButtonStyled>
+                    <a className="curriculo" href="/pdfs/curriculo.pdf" download>Currículo</a>
                 </OptionsStyled>
 
             </HeaderStyled>

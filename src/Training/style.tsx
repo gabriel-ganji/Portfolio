@@ -34,16 +34,20 @@ export const TrainingStyled = styled.div`
         box-shadow: 0px 0px 3px white;
     }
 
-    button {
+    .button {
         width: 12rem;
         height: 3rem;
         border-radius: .5rem;
         border: none;
         background-color: var(--light-main-brown);
         color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
     }
 
-    button:hover{
+    .button:hover{
         background-color: var(--main-brown);
     }
 
