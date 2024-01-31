@@ -2,32 +2,36 @@ import { styled } from "styled-components";
 
 export const MainStyled = styled.div`
 
-    object-fit: scale-down;
-    height: calc(100vh - 2rem);
     width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    height: 90vh;
     display: flex;
+    color: var(--dark);
+    align-items: center;
+    object-fit: scale-down;
+    flex-direction: column;
+    justify-content: center;
     scroll-snap-type: y mandatory;
-    
+    -webkit-box-shadow: 0px 25px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 25px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 25px 0px 0px rgba(0,0,0,0.75);
 
-    #quote {
-        font-size: 5.5rem;
-        text-align: center;
-        width: 80%;
-        color: #e0e0e0;
+    .quote {
+        width: 100%;
+        display: flex;
+        padding-left: 15rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
-    span {
-        font-weight: 700;
-        color: #e0e0e0;
+    #subtitle {
+        color: var(--dark-gray); 
     }
 
-    @media only screen and (max-width: 800px){
-        #quote {
-            font-size: 2rem;
-        }
+    h3 {
+        width: 55%;
+        font-size: 3rem;
+        margin-bottom: 0;
     }
 
 `

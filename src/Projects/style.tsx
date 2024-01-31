@@ -3,55 +3,93 @@ import styled from "styled-components";
 export const ProjectsStyled = styled.div`   
 
     width: 100%;
-    height: 100vh;
+    height: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--white);    
+    padding: 5rem 0;
+    color: var(--dark);
+
+    .title {
+        display: flex;
+        width: calc(70% - 2.5rem);
+        align-items: flex-start;
+    }
 
     #allHabs {
-        width: 100%;
+        width: 90%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    img {
-        height: 5rem;
-        width: 5.5rem;
-        border-radius: .5rem;
-    }
-
-    h2 {
-        margin: 0;
-    }
-
-    #habilities {
-        gap: 1rem;
-        width: 70%;
-        display: flex;
-        padding: 5rem;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
 
-    .cardHab {
-        width: 10rem;
-        display: flex;
-        height: 10rem;
-        align-items: center;
-        border-radius: 1rem;
-        flex-direction: column;
-        justify-content: center;
-        box-shadow: 0 0 2px #ffffff;
-        background-color: rgba(0, 0, 0, 0.4);  
-        background: linear-gradient(45deg, rgba(0, 0, 0, 0.6) 40%, rgba(255, 255, 255, 0.03) 50%, rgba(0, 0, 0, 0.6) 60%);
+    img {
+        height: 4.5rem;
+        width: 9rem;
+        border-radius: .2rem;
+        animation: slowed 1s;
     }
 
-    .cardHab:hover{
-        transform: scale(1.05);
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: var(--dark);
+        margin-bottom: 0;
+    }
+
+    h3 {
+        color: var(--dark-gray);
+    }
+
+    .titleSubtitle {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 15rem;
+        margin-bottom: 3rem;
+    }
+
+    .titleSubtitle div {
+        width: 40%;
+    }
+
+    #habilities {
+        gap: 1rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1.5rem;
+    }
+
+    .cardHab {
+        display: flex;
+        padding: 4rem;
+        height: 20rem;
+        font-weight: 100;
+        font-size: 1.2rem;
+        color: var(--dark);
+        align-items: center;
+        border-radius: 0.3rem;
+        flex-direction: column;
+        width: calc(33% - 9rem);
+        min-height: max-content;
+        justify-content: center;
+        box-shadow: 0 0 2px var(--gray);
+        background-color: rgba(255, 255, 255, 0.4);  
+    }
+
+    .logoDown {
+        position: relative;
+        top: 85%;
+        left: 54%;
+        width: 2.5rem;
+        height: 1rem;
+        opacity: 0.1;
     }
 
     @media only screen and (max-width: 800px){
@@ -68,7 +106,6 @@ export const ProjectsStyled = styled.div`
         justify-content: space-between;
         margin: 0;
         padding: 0;
-        font-size: 0.7rem;
     }
 
         .cardHab {
@@ -77,6 +114,7 @@ export const ProjectsStyled = styled.div`
         padding: 5%;
 
     }
+
     img {
         height: 100%;
         width: 100%;

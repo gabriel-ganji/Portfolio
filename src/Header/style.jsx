@@ -2,11 +2,30 @@ import { styled } from "styled-components";
 
 export const HeaderStyled = styled.div`
 
+    z-index: 10;
+    width: 100%;
     display: flex;
     align-items: center;
-    padding: 1.5rem 8rem;
     justify-content: space-between;
-    background-color: var(--black);
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    .logoHeader {
+        width: 10rem;
+        margin-left: 8rem;
+    }
+
+    button {
+        color: white;
+        padding: 0.5rem;
+        margin-right: 8rem;
+        border-radius: 0.3rem;
+        background: var(--dark);
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
 
 `
 
@@ -14,7 +33,6 @@ export const OptionsStyled = styled.div`
 
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
     display: flex;
     gap: 1.5rem;
 
@@ -31,7 +49,7 @@ export const OptionsStyled = styled.div`
         background-color: var(--light-main-red);
         padding: 0.5rem 1rem;
         border-radius: 8px;
-        font-size: 1rem;
+        /* font-size: 1rem; */
         border: none;
         color: #e0e0e0;
     }

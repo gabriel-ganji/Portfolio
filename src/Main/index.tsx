@@ -2,14 +2,13 @@ import { MainStyled } from "./style";
 
 
 export default function Main() {
-
-    const imageToUse = window.innerWidth < 800 ?  '/images/renascenceModern90deg.jpg' : '/images/renascenceModern.jpg'
-
     return (
         <MainStyled>
-            <img src={imageToUse} style={{height: 'calc(100vh - 5rem)', width: '100%', position: 'absolute', right: '0', left: '0', top: '5rem', zIndex: '-1'}} />
-            <p id='quote'>“Todas as pessoas deveriam aprender a programar, pois isso ensina a pensar.”</p>
-            <p><span>Steve Jobs</span> — Fundador da Apple</p>
+            <img src="/images/backgroundMain.jpg" style={{ width: '100%', position: 'absolute', zIndex: '-1' }} />
+            <div className="quote">
+                <h3>Loremipsum dolor sitamet, consectetur adipiscing elit.</h3>
+                <h2 id='subtitle'>Vivamus viverra miacolam lacinia luctus mauris.</h2>
+            </div>
         </MainStyled>
     )
 }

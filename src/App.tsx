@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import './global.css';
 import './App.css';
+import CustomCursor from './CustomCursor';
 
 function App() {
 
@@ -12,7 +13,11 @@ function App() {
   }, []);
 
   return (
-    Home()
+    <>
+      <CustomCursor />
+      <Home />
+    </>
+    
   );
 
 }

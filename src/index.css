@@ -3,6 +3,8 @@
   src: url(https://fonts.cdnfonts.com/css/orienta);
 }
 
+html * {cursor:none!important}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +14,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Orienta', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: rgb(25, 25, 25);
+  background-color: white;
+  cursor: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {

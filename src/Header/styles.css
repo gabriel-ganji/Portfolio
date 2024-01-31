@@ -31,7 +31,7 @@
     text-decoration: none;
     color: #0e2431;
     font-weight: 500;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     padding: 0.7rem;
   }
   
@@ -54,7 +54,6 @@
     right: 20px;
     z-index: 5;
     opacity: 0;
-    cursor: pointer;
     color: white;
     background-color: beige;
   }
@@ -109,7 +108,7 @@
   
   .navbar .menu-items li {
     margin-bottom: 1.2rem;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: 500;
   }
   
@@ -117,7 +116,7 @@
     position: absolute;
     top: 5px;
     right: 15px;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     color: #ffffff;
   }
   

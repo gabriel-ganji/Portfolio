@@ -1,0 +1,114 @@
+/* styles.css */
+
+.sidebar {
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--dark);
+    overflow-x: hidden;
+    transition: width 0.5s;
+    z-index: 100;
+  }
+  
+  .sidebar.open {
+    width: 40%;
+  }
+  
+  .toggle-button {
+    position: relative;
+    top: 50%;
+    right: 0px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+
+  .toggle-button-exit {
+    position: relative;
+    top: 2%;
+    left: 2rem;
+  }
+  
+  .sidebar-content {
+    padding: 2rem;
+  }
+
+  .formContainer {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+#contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0rem;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+#contactUs form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#contactUs form input {
+    width: 100%;
+    height: 1.5rem;
+    padding: .5rem .7rem;
+    border-radius: 0.2rem;
+    border: none;
+    box-shadow: 0 0 2px var(--gray);
+}
+
+#contactUs form input:focus {
+    border: none;
+    outline: none;
+}
+
+#contactUsLines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#contactUsDoubleLine input {
+    width: 20%;
+}
+
+.contactContainer {
+    width: 100%;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: var(--blue-wave);
+    border: 1px solid var(--gray);
+    padding: .75rem 2rem;
+    border-radius: .25rem;
+    color: white;
+}
+ 
+#networks {
+    display: flex;
+    width: max-content;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.network {
+    width: 2rem;
+    background-color: var(--dark);
+    border-radius: 0.3rem;
+}
+  
