@@ -6,9 +6,9 @@ export const AboutUsStyled = styled.div`
     height: 100vh;
     display: flex;
     color: var(--white);
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: var(--white);
 
     h1 {
@@ -17,6 +17,7 @@ export const AboutUsStyled = styled.div`
 
     p {
         font-size: 1.75rem;
+        color: var(--dark-gray);
     }
 
     #aboutUs-container{

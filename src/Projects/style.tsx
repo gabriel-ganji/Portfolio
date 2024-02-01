@@ -57,7 +57,7 @@ export const ProjectsStyled = styled.div`
     }
 
     #habilities {
-        gap: 1rem;
+        gap: 3rem;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -76,11 +76,15 @@ export const ProjectsStyled = styled.div`
         align-items: center;
         border-radius: 0.3rem;
         flex-direction: column;
-        width: calc(33% - 9rem);
+        width: calc(35% - 12rem);
         min-height: max-content;
         justify-content: center;
         box-shadow: 0 0 2px var(--gray);
         background-color: rgba(255, 255, 255, 0.4);  
+    }
+
+    p {
+        color: var(--dark-gray);
     }
 
     .logoDown {

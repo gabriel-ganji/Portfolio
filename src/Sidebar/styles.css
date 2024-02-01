@@ -58,6 +58,7 @@
     justify-content: center;
     gap: 1rem;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 #contactUs form input {
@@ -89,7 +90,6 @@
 }
 
 button {
-    margin-top: 1rem;
     background-color: var(--blue-wave);
     border: 1px solid var(--gray);
     padding: .75rem 2rem;

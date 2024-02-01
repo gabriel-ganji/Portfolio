@@ -8,7 +8,7 @@ export const HeaderStyled = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     
     .logoHeader {
         width: 10rem;
